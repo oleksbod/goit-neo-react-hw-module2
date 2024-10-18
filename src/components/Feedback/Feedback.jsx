@@ -1,6 +1,4 @@
-function Feedback({ data: { good, neutral, bad }, totalFeedback }) {
-  const positiveFeedback = Math.round((good / totalFeedback) * 100);
-
+function Feedback({ data: { good, neutral, bad }, totalFeedback, positiveFeedback }) {
   return (
     <section>
       <div>Good: {good}</div>
